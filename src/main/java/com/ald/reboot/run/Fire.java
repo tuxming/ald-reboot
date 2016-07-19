@@ -42,6 +42,8 @@ public class Fire {
 			loginPwd.sendKeys(loginInfo.get(loginNameStr));
 		}
 		
+                submit.click();
+
 		driver.get("https://www.upwork.com/tests");
 		
 		List<WebElement> tags = driver.findElements(By.xpath("//*[@id='skilltestslist']//td[1]/a"));
@@ -52,6 +54,6 @@ public class Fire {
 			log.debug(href);
 		}
 		
-		submit.click();
+		
 	}
 }
